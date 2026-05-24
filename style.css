@@ -1425,3 +1425,410 @@ h1{
     }
 }
 
+/* ========== Responsive — layout only ========== */
+
+/* Large tablets & small laptops */
+@media (max-width: 1024px) {
+    html {
+        scroll-padding-top: 105px;
+    }
+
+    .nav {
+        width: min(90%, 760px);
+        height: 68px;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+
+    .container {
+        height: auto;
+        min-height: 520px;
+        max-height: none;
+    }
+
+    .skill-content {
+        padding-left: 50px;
+    }
+
+    .div-1::before,
+    .div-2::before,
+    .div-3::before {
+        left: -50px;
+        width: 50px;
+    }
+
+    .experince-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .tech-layouts {
+        gap: 50px;
+    }
+
+    .contact-section {
+        padding: 80px 6%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    html {
+        scroll-padding-top: 100px;
+    }
+
+    .nav {
+        width: min(94%, 640px);
+        height: auto;
+        min-height: 60px;
+        padding: 10px 12px;
+        flex-wrap: wrap;
+        gap: 6px 10px;
+        top: 12px;
+        margin-top: 12px;
+    }
+
+    .nav a {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    .intro {
+        flex-direction: column;
+        min-height: auto;
+        padding: 2rem 5% 3rem;
+        text-align: center;
+    }
+
+    .intro-right {
+        width: min(280px, 75vw);
+        height: 320px;
+        order: 1;
+    }
+
+    .intro-left {
+        width: 100%;
+        max-width: 100%;
+        order: 2;
+    }
+
+    @keyframes heroTextIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .skill-header h1,
+    .code-header h1,
+    .experince-header h1,
+    .education-header h1,
+    .tech-header h1 {
+        font-size: 1.65rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+        padding: 0 0.5rem;
+    }
+
+    .skill-left {
+        width: 100%;
+        max-width: 320px;
+        padding: 0.5rem 0 1rem;
+    }
+
+    .skill-left img {
+        width: 80%;
+        max-height: 220px;
+    }
+
+    .skill-line {
+        width: 80%;
+        height: 5px;
+        min-width: unset;
+        align-self: center;
+    }
+
+    .skill-content {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        padding-top: 1rem;
+        gap: 1rem;
+    }
+
+    .div-1,
+    .div-2,
+    .div-3 {
+        width: 100%;
+        flex: none;
+        min-height: auto;
+    }
+
+    .div-1::before,
+    .div-2::before,
+    .div-3::before {
+        display: none;
+    }
+
+    .platform {
+        width: 130px;
+        height: 170px;
+    }
+
+    .layouts {
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .experince-section {
+        min-height: auto;
+        padding: 0 4%;
+    }
+
+    .experince-container {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        gap: 1.25rem;
+    }
+
+    .experince-left,
+    .experince-right {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .experince-right {
+        min-height: 200px;
+    }
+
+    .education-section {
+        min-height: auto;
+        padding: 0 4% 2rem;
+    }
+
+    .btech,
+    .inter,
+    .ten {
+        flex-direction: column;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .btech-year,
+    .inter-year,
+    .ten-year,
+    .btech-details,
+    .inter-details,
+    .ten-details,
+    .btech-percentage,
+    .inter-percentage,
+    .ten-percentage {
+        width: 100%;
+        padding: 0.75rem 1rem;
+    }
+
+    .btech-percentage,
+    .inter-percentage,
+    .ten-percentage {
+        justify-content: center;
+    }
+
+    .btech-percentage p,
+    .inter-percentage p,
+    .ten-percentage p {
+        padding-right: 0;
+    }
+
+    .tech-layouts {
+        gap: 28px;
+    }
+
+    .tech {
+        width: 120px;
+        height: 120px;
+    }
+
+    .tech-layouts img {
+        height: 70px;
+    }
+
+    .contact-section {
+        padding: 60px 5%;
+        margin-top: 30px;
+    }
+
+    .contact-title {
+        font-size: 1.85rem;
+        margin-bottom: 40px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 28px;
+    }
+
+    .footer-details {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 5%;
+        gap: 1rem;
+    }
+
+    .footer-right,
+    .footer-left {
+        width: 100%;
+        min-height: auto;
+        padding-right: 0;
+    }
+
+    .footer-right h2 {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .footer-left {
+        height: auto;
+        padding-top: 0;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    html {
+        scroll-padding-top: 92px;
+    }
+
+    .nav {
+        width: calc(100% - 20px);
+        border-radius: 22px;
+        justify-content: center;
+        top: 10px;
+        margin-top: 10px;
+    }
+
+    .nav a {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+
+    .intro {
+        padding: 1.5rem 4% 2.5rem;
+        gap: 1rem;
+    }
+
+    .intro-right {
+        width: min(240px, 85vw);
+        height: 260px;
+    }
+
+    .intro-left h1 {
+        font-size: 1.45rem;
+    }
+
+    .skills-section,
+    .coding-profiles,
+    .experince-section,
+    .education-section,
+    .techs {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .div-1,
+    .div-2,
+    .div-3 {
+        padding: 0.85rem 1rem;
+    }
+
+    .div-1 h1,
+    .div-2 h1,
+    .div-3 h1 {
+        font-size: 1.05rem;
+    }
+
+    .div-1 p,
+    .div-2 p,
+    .div-3 p {
+        font-size: 0.82rem;
+    }
+
+    .platform {
+        width: 110px;
+        height: 145px;
+    }
+
+    .platform img {
+        padding: 8px;
+    }
+
+    .experince-left {
+        padding: 1.25rem;
+    }
+
+    .experince-left h1 {
+        font-size: 1.15rem;
+    }
+
+    .tech {
+        width: 100px;
+        height: 100px;
+    }
+
+    .tech-layouts {
+        gap: 18px;
+    }
+
+    .tech-layouts img {
+        height: 56px;
+    }
+
+    .tech p {
+        font-size: 0.72rem;
+    }
+
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-section {
+        padding: 50px 4%;
+    }
+
+    .send-btn {
+        width: 100%;
+    }
+
+    .end-card p {
+        font-size: 0.85rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+    .nav a {
+        font-size: 11px;
+    }
+
+    .intro-left h1 {
+        font-size: 1.3rem;
+    }
+
+    .platform {
+        width: 100px;
+        height: 130px;
+    }
+}
+
