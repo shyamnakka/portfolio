@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Certificates</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .certificates {
+            width: 100%;
+            max-width: 1500px;
+            margin: 100px auto 40px;
+            padding: 20px 3%;
+            box-sizing: border-box;
+        }
+
+        .certificates h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: clamp(28px, 3vw, 42px);
+        }
+
+        .certificates > p {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 18px;
+        }
+
+        .certificate-list {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            width: 100%;
+        }
+
+        .certificate-item {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.65);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .certificate-item h2 {
+            margin: 0 0 20px;
+            font-size: clamp(18px, 2vw, 26px);
+            text-align: center;
+        }
+
+        /* Certificate image */
+        .certificate-image {
+            display: block;
+            width: 50%;
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 768px) {
+            .certificates {
+                margin: 75px auto 30px;
+                padding: 10px;
+            }
+
+            .certificates > p {
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+
+            .certificate-list {
+                gap: 24px;
+            }
+
+            .certificate-item {
+                padding: 8px;
+                border-radius: 10px;
+            }
+
+            .certificate-item h2 {
+                margin-bottom: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <!-- Certificates Section -->
+    <section class="certificates">
+
+        <h1>My Certifications and Achievements</h1>
+        
+
+        <div class="certificate-list">
+
+            <!-- Certificate 1 -->
+            <div class="certificate-item">
+                <h2>AWS Certified Cloud Practitioner</h2>
+
+                <img
+                    src="./certificatesdata/aws certified cloud practitioner.png"
+                    alt="AWS Certified Cloud Practitioner Certificate"
+                    class="certificate-image">
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="certificate-item">
+                <h2>SQL Intermediate</h2>
+
+                <img
+                    src="./certificatesdata/sql intermediate.png"
+                    alt="SQL Intermediate"
+                    class="certificate-image">
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="certificate-item">
+                <h2>SQL Basic</h2>
+
+                <img
+                    src="./certificatesdata/sql basic.png"
+                    alt="SQL Basic"
+                    class="certificate-image">
+            </div>
+
+            <div class="certificate-item">
+                <h2>PYTHON Basic</h2>
+
+                <img
+                    src="./certificatesdata/python basic.png"
+                    alt="PYTHON Basic"
+                    class="certificate-image">
+            </div>
+
+            <div class="certificate-item">
+                <h2>AWS + DevOps Intership</h2>
+
+                <img
+                    src="./certificatesdata/internship.png"
+                    alt="Intership"
+                    class="certificate-image">
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
